@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+    background-color: black;
+    background-image: url('https://theyuvas.com/wp-content/uploads/2020/10/rock-paper-scissor.png');
+    background-size: 100vw 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.parent-div{
+   padding: 20px;
+    height: 60vh;
+    margin-bottom: 100px;
+    width: 70vw;
+    background-color: antiquewhite;
+    position: absolute;
+    border: 2px solid black;
+}
+.parent-ka-child-div{
+    position: relative;
+    height: 100%;
+}
+.user-choice{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-self: center;
+    width: 40%;
+    justify-content: space-between;
+}
+.computer-choice{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 10px 25px;
+    background-color: rgb(101, 101, 246);
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:focus{
+    transition: transform 0.1s ease;
+    transform: scale(1.2);
+    background-color: brown;
+}
+
+img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-top: -40px;
+    gap: 4.8rem;
+}
+.result{
+  
+    position: absolute;
+    left: 40%;
+    top:10%;
+}
+@media ( max-width:700px) {
+    img{
+        height: 3rem;
+        width: 3rem;
+        margin-top: 0px;
+        gap: 1.8rem;
+    }
+}
